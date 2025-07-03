@@ -32,3 +32,7 @@ variable "repositories_git" {
 variable "projects" {
   type = any
 }
+
+variable "applications" {
+  type = any
+}
