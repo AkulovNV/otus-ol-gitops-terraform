@@ -9,5 +9,9 @@ variable "applications" {
     path                 = string
     destination_server   = string
     destination_namespace= string
+    plugin                = optional(object({
+      name = string
+      env  = optional(map(string))
+    }))
   }))
 }

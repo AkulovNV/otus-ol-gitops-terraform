@@ -18,6 +18,9 @@ applications = {
     path = "applications/app-in-app/app"
     destination_server = "https://kubernetes.default.svc"
     destination_namespace = "app"
+    plugin = {
+      name = "avp"
+    }
   }
   app_kustomize = {
     name = "app-kustomize"
